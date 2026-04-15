@@ -1,1 +1,2 @@
-visable = false;
+visible = false;
+

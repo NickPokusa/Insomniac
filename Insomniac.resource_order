@@ -28,6 +28,8 @@
     {"name":"SleepButtonObj","order":25,"path":"objects/SleepButtonObj/SleepButtonObj.yy",},
     {"name":"SleepMeterEmptyObj","order":23,"path":"objects/SleepMeterEmptyObj/SleepMeterEmptyObj.yy",},
     {"name":"SleepMeterFillObj","order":24,"path":"objects/SleepMeterFillObj/SleepMeterFillObj.yy",},
+    {"name":"StartButtonObj","order":26,"path":"objects/StartButtonObj/StartButtonObj.yy",},
+    {"name":"rm_start","order":16,"path":"rooms/rm_start/rm_start.yy",},
     {"name":"Script1","order":21,"path":"scripts/Script1/Script1.yy",},
     {"name":"ES_House_of_Horror___Experia","order":10,"path":"sounds/ES_House_of_Horror___Experia/ES_House_of_Horror___Experia.yy",},
     {"name":"snd_drums_heartbeat","order":1,"path":"sounds/snd_drums_heartbeat/snd_drums_heartbeat.yy",},
@@ -44,6 +46,7 @@
     {"name":"Left_Door_Light","order":8,"path":"sprites/Left_Door_Light/Left_Door_Light.yy",},
     {"name":"Left_Door","order":7,"path":"sprites/Left_Door/Left_Door.yy",},
     {"name":"LeftArrow","order":18,"path":"sprites/LeftArrow/LeftArrow.yy",},
+    {"name":"MainMenu","order":28,"path":"sprites/MainMenu/MainMenu.yy",},
     {"name":"MirrorMonster","order":20,"path":"sprites/MirrorMonster/MirrorMonster.yy",},
     {"name":"RightArrow","order":19,"path":"sprites/RightArrow/RightArrow.yy",},
     {"name":"RoomLeft","order":16,"path":"sprites/RoomLeft/RoomLeft.yy",},
@@ -52,5 +55,6 @@
     {"name":"SleepMeterBackground","order":24,"path":"sprites/SleepMeterBackground/SleepMeterBackground.yy",},
     {"name":"SleepMeterEmpty","order":25,"path":"sprites/SleepMeterEmpty/SleepMeterEmpty.yy",},
     {"name":"SleepMeterFill","order":26,"path":"sprites/SleepMeterFill/SleepMeterFill.yy",},
+    {"name":"StartButton","order":29,"path":"sprites/StartButton/StartButton.yy",},
   ],
 }

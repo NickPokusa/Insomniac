@@ -1,1 +1,1 @@
-light_on = false;
+flashlight_on = false;
