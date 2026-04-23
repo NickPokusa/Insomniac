@@ -3,7 +3,6 @@ flashlight_on = !flashlight_on;
 
 var light = instance_find(FlashlightLightObj, 0);
 
-show_debug_message("flashlight_on = " + string(flashlight_on));
 
 if (light != noone){
 	light.visible = flashlight_on;

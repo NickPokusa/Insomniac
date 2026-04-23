@@ -1,27 +1,27 @@
 {
   "$GMSprite":"v2",
-  "%Name":"StartButton",
+  "%Name":"QuitButton",
   "bboxMode":0,
-  "bbox_bottom":722,
+  "bbox_bottom":832,
   "bbox_left":565,
-  "bbox_right":744,
-  "bbox_top":654,
+  "bbox_right":724,
+  "bbox_top":760,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"eca2e00d-0b12-40fd-9ce8-2ea4deb7946c","name":"eca2e00d-0b12-40fd-9ce8-2ea4deb7946c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"2c25aa65-107d-469e-b179-921b947f2c3c","name":"2c25aa65-107d-469e-b179-921b947f2c3c","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":1080,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"66146199-e912-4905-a454-bc38a7655416","blendMode":0,"displayName":"default","isLocked":false,"name":"66146199-e912-4905-a454-bc38a7655416","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"38130f60-1ab1-468d-a60b-8db00f4d3939","blendMode":0,"displayName":"default","isLocked":false,"name":"38130f60-1ab1-468d-a60b-8db00f4d3939","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"StartButton",
+  "name":"QuitButton",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"StartButton",
+    "%Name":"QuitButton",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"StartButton",
+    "name":"QuitButton",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"eca2e00d-0b12-40fd-9ce8-2ea4deb7946c","path":"sprites/StartButton/StartButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3a831cb6-5ccc-4887-9368-bd949ddce3d8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2c25aa65-107d-469e-b179-921b947f2c3c","path":"sprites/QuitButton/QuitButton.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"a1dd5a86-ee4d-49d7-947d-a72aceb62766","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
