@@ -2,13 +2,7 @@ window_set_size(1280, 1080);
 
 display_set_gui_size(1280, 1080);
 
-cam_x = 1280;
-
-target_x = 1280;
-
-move_speed = 40;
-
-cam = camera_create_view(cam_x, 0, 1280, 1080, -1, -1, -1, -1);
+cam = camera_create_view(0, 0, 1280, 1080, -1, -1, -1, -1);
 
 view_enabled = true;
 

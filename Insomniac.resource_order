@@ -25,6 +25,7 @@
     {"name":"LeftArrowObj","order":17,"path":"objects/LeftArrowObj/LeftArrowObj.yy",},
     {"name":"MirrorMonsterObj","order":20,"path":"objects/MirrorMonsterObj/MirrorMonsterObj.yy",},
     {"name":"obj_camera_controller","order":18,"path":"objects/obj_camera_controller/obj_camera_controller.yy",},
+    {"name":"obj_home_camera_controller","order":29,"path":"objects/obj_home_camera_controller/obj_home_camera_controller.yy",},
     {"name":"QuitButtonObj","order":27,"path":"objects/QuitButtonObj/QuitButtonObj.yy",},
     {"name":"RightArrowObj","order":19,"path":"objects/RightArrowObj/RightArrowObj.yy",},
     {"name":"SleepButtonObj","order":25,"path":"objects/SleepButtonObj/SleepButtonObj.yy",},
