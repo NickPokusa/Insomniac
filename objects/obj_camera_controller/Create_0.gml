@@ -1,6 +1,3 @@
-window_set_size(1280, 1080);
-
-display_set_gui_size(1280, 1080);
 
 cam_x = 1280;
 
