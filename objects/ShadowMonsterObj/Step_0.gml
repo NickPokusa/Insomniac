@@ -1,6 +1,7 @@
 // Fade in
 if (fading_in) {
 	image_alpha += fade_in_speed;
+
 	if (image_alpha >= 1) {
 		image_alpha = 1;
 		fading_in = false;
@@ -17,20 +18,18 @@ if (fading_out) {
 		visible = false;
 		hit_by_light = false;
 		global.monster_active = false;
-		
-		var light = instance_find(LampLightObj, 0);
+
+		var light = instance_find(CurtainLightObj, 0);
 		if (light != noone){
 			light.visible = false;
 		}
-		
-		var lamp = instance_find(LampObj, 0);
-		if (lamp != noone){
-			lamp.lamp_on = false;
+
+		var curtain = instance_find(CurtainObj, 0);
+		if (curtain != noone){
+			curtain.curtain_state = 0;
+			curtain.sprite_index = CurtainClosed;
 		}
 
-		// schedule next appearance
 		alarm[0] = irandom_range(game_get_speed(gamespeed_fps) * 10, game_get_speed(gamespeed_fps) * 18);
-	
-	
 	}
 }
