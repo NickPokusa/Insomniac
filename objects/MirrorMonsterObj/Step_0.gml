@@ -17,7 +17,7 @@ if (fading_out) {
 		global.monster_active = false;
 		hit_by_light = false;
 		
-		alarm[0] = irandom_range(game_get_speed(gamespeed_fps) * 4, game_get_speed(gamespeed_fps) * 8);
+		alarm[0] = irandom_range(game_get_speed(gamespeed_fps) * 10, game_get_speed(gamespeed_fps) * 18);
 		
 		var light = instance_find(FlashlightLightObj, 0);
 		if (light != noone) {
