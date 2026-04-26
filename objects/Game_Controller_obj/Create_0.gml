@@ -6,7 +6,7 @@ SleepMeterFillObj.game_won = false;
 //start looping background music
 bgm = audio_play_sound(ES_House_of_Horror___Experia, 1, true);
 //lower volume to avoid overpowering gameplay sound
-udio_sound_gain(bgm, 0.1, 0);
+audio_sound_gain(bgm, 0.1, 0);
 
 //initializes global flag used to track if a monster is active
 global.monster_active=false;

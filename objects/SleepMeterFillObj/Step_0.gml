@@ -36,7 +36,7 @@ if(sleep_meter >= sleep_meter_max && !game_won){
 	
 	//RESET LAMP
 	var lampLight = instance_find(LampLightObj, 0);
-	if (lampLight !- noone){
+	if (lampLight != noone){
 		lampLight.visible = false;
 	}
 	
@@ -47,7 +47,7 @@ if(sleep_meter >= sleep_meter_max && !game_won){
 	
 	//RESET CURTAIN
 	var curtainLight = instance_find(CurtainLightObj, 0);
-	if(curtaiLight != noone){
+	if(curtainLight != noone){
 		curtainLight.visible = false;
 	}
 	
