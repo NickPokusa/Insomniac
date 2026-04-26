@@ -11,6 +11,11 @@ if (lamp_on) {
 	exit;
 }
 
+//CLICK FEEDBACK
+var s = audio_play_sound(snd_click, 1, false);
+//volume control
+audio_sound_gain(s, 0.2, 0);
+
 //Activate lamp
 lamp_on = true;
 

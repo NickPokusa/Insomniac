@@ -4,6 +4,20 @@ if (is_sleeping && !game_won && !global.monster_active){
 	sleep_meter += sleep_speed;
 }
 
+//SLEEP SOUND CONTROL
+//Start when sleeping
+if (is_sleeping && sleep_snd == -1) {
+	sleep_snd = audio_play_sound(snd_sleeping, 1, true);
+	//volume control
+	audio_sound_gain(sleep_snd, 0.2, 0);
+}
+
+//stop sound when not sleeping
+if(!is_sleeping && sleep_snd != -1){
+	audio_stop_sound(sleep_snd);
+	sleep_snd = -1;
+}
+
 //keep meter within valid range
 sleep_meter = clamp(sleep_meter, 0, sleep_meter_max);
 
@@ -22,6 +36,12 @@ if(sleep_meter >= sleep_meter_max && !game_won){
 	
 	//stop background music
 	audio_stop_sound(ES_House_of_Horror___Experia);
+	
+	//stop sleep sound 
+	if(sleep_snd != -1){
+		audio_stop_sound(sleep_snd);
+		sleep_snd = -1;
+	}
 	
 	//RESET FLASHLIGHT
 	var light =instance_find(FlashlightLightObj, 0);

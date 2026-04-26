@@ -1,3 +1,8 @@
+//CLICK FEEDBACK
+var s = audio_play_sound(snd_click, 1, false);
+//voume control
+audio_sound_gain(s, 0.2, 0);
+
 //MOVE CAMERA RIGHT
 //tell the camera controller to shift to the next panel
 with (obj_camera_controller){

@@ -19,3 +19,7 @@ game_won = false;
 //VISUAL SCALING
 //store origional sprite scale for fill animation
 start_xscale = image_xscale;
+
+//SLEEP SOUND
+//stores the loopiing sleep sound instance so it can be stopped
+sleep_snd = -1;
