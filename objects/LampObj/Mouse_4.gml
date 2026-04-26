@@ -1,13 +1,24 @@
+//INPUT HANDLING
+//only allow lamp use when clown is present
+var clown = instance_find(ClownMonsterObj, 0);
 
-lamp_on = !lamp_on;
+if (clown == noone || !clown.visible || clown.fading_out){
+	exit;
+}
 
+//prevent repeated clicks while lamp is already on 
+if (lamp_on) {
+	exit;
+}
+
+//Activate lamp
+lamp_on = true;
+
+//Find light object
 var light = instance_find(LampLightObj, 0);
 
-
+//ENABLE LIGHT EFFECT
+//make the light visible so it can interact with the clown monster
 if (light != noone){
-	light.visible = lamp_on;
-	show_debug_message("light.visible set to " + string(light.visible));
-}
-else{
-	show_debug_message("No light instance found");
+	light.visible = true;
 }

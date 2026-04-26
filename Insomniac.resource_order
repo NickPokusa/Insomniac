@@ -25,7 +25,6 @@
     {"name":"Game_Controller_obj","order":16,"path":"objects/Game_Controller_obj/Game_Controller_obj.yy",},
     {"name":"LampLightObj","order":30,"path":"objects/LampLightObj/LampLightObj.yy",},
     {"name":"LampObj","order":31,"path":"objects/LampObj/LampObj.yy",},
-    {"name":"Left_Door_obj","order":1,"path":"objects/Left_Door_obj/Left_Door_obj.yy",},
     {"name":"LeftArrowObj","order":17,"path":"objects/LeftArrowObj/LeftArrowObj.yy",},
     {"name":"MirrorMonsterObj","order":20,"path":"objects/MirrorMonsterObj/MirrorMonsterObj.yy",},
     {"name":"obj_camera_controller","order":18,"path":"objects/obj_camera_controller/obj_camera_controller.yy",},

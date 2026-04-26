@@ -1,10 +1,20 @@
+//INPUT HANDLING
+//only allow curtain interaction while shadow monster is present
+var shadow = instance_find(ShadowMonsterObj, 0);
+
+if (shadow == noone || !shadow.visible || shadow.fading_out) {
+	exit;
+}
+
+//ADVANCE CURTAIN STATE
+//each click progresses the curtain toward fully open, then resets
 curtain_state += 1;
 
 if (curtain_state >3){
 	curtain_state = 0;
 }
 
-//Set curtain sprite
+//UPDATE CURTAIN VISUAL
 switch (curtain_state){
 	case 0: 
 		sprite_index = CurtainClosed;
@@ -23,10 +33,11 @@ switch (curtain_state){
 	break;
 }
 
-//update light
+//UPDATE LIGHT BASED ON CURTAIN STATE
 var light = instance_find(CurtainLightObj, 0);
 
 if (light != noone){
+	//light only appears when curtain is at least partially open
 	light.visible = (curtain_state > 0);
 	
 	if(light.visible){

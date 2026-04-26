@@ -1,13 +1,23 @@
+//INPUT HANDLING
+//only allow flashlight use when the mirror monster is present
+var mirror = instance_find(MirrorMonsterObj, 0);
 
-flashlight_on = !flashlight_on;
+if (mirror == noone || !mirror.visible || mirror.fading_out){
+	exit;
+}
 
+// prevent repeated activation
+if (flashlight_on){
+	exit;
+}
+
+//activate flashlight
+flashlight_on = true;
+
+//enable light
 var light = instance_find(FlashlightLightObj, 0);
 
 
 if (light != noone){
-	light.visible = flashlight_on;
-	show_debug_message("light.visible set to " + string(light.visible));
-}
-else{
-	show_debug_message("No light instance found");
+	light.visible = true;
 }
