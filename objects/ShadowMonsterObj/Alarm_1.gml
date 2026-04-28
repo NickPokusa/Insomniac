@@ -1,6 +1,11 @@
 //FAIL CONDITION
-//triggered if the player doesnt react in time
-show_message("Game Over");
+//triggered if player does not react in time
 
-//restart the current level
-room_restart();
+//set global to remember retry room 
+global.retry_room = room;
+
+//stop gameplay music
+audio_stop_sound(ES_House_of_Horror___Experia);
+
+//go to game over screen
+start_transition(rm_lose);

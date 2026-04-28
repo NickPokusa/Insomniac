@@ -6,4 +6,4 @@ audio_sound_gain(s, 0.2, 0);
 
 //START GAME
 //transistion from the main menu to the first level
-room_goto(rm_night1);
+start_transition(rm_story);
