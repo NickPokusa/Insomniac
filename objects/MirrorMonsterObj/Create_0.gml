@@ -16,9 +16,10 @@ fade_out_speed = 0.05;
 hit_by_light = false;
 
 
+
 //SPAWN TIMING
 //schedule first random appearance (8-14 seconds)
-alarm[0] = irandom_range(game_get_speed(gamespeed_fps) * 8, game_get_speed(gamespeed_fps) * 14);
+alarm[0] = irandom_range(game_get_speed(gamespeed_fps) * 8, game_get_speed(gamespeed_fps) * 15);
 
 //disable fail timer until monster spawns
 alarm[1] = -1;

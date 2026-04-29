@@ -76,5 +76,7 @@ if(sleep_meter >= sleep_meter_max && !game_won){
 		curtain.curtain_state = 0;
 		curtain.sprite_index = CurtainClosed;
 	}
+	global.next_room = rm_night2;
+	start_transition(rm_win);
 }
 

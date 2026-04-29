@@ -39,7 +39,7 @@ if (fading_out) {
 		
 		//RESPAWN TIMER
 		//schedule next random appearance
-		alarm[0] = irandom_range(game_get_speed(gamespeed_fps) * 10, game_get_speed(gamespeed_fps) * 18);
+		alarm[0] = irandom_range(game_get_speed(gamespeed_fps) * 8, game_get_speed(gamespeed_fps) * 15);
 	}
 	
 }

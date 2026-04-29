@@ -26,4 +26,4 @@ audio_play_sound(snd_hard_horror_hit_drum, 1, false);
 
 //FAIL TIMER
 //player must use flashlight before time runs out
-alarm[1] = game_get_speed(gamespeed_fps) *10;
+alarm[1] = game_get_speed(gamespeed_fps) * 10;
