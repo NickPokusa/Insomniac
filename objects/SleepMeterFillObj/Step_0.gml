@@ -43,7 +43,7 @@ if(sleep_meter >= sleep_meter_max && !game_won){
 		sleep_snd = -1;
 	}
 	
-	//RESET FLASHLIGHT
+		//RESET FLASHLIGHT
 	var light =instance_find(FlashlightLightObj, 0);
 	if (light != noone){
 		light.visible = false;
@@ -76,6 +76,7 @@ if(sleep_meter >= sleep_meter_max && !game_won){
 		curtain.curtain_state = 0;
 		curtain.sprite_index = CurtainClosed;
 	}
+
 	global.next_room = rm_night2;
 	start_transition(rm_win);
 }
