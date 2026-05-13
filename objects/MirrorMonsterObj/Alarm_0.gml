@@ -1,3 +1,8 @@
+if (global.paused) {
+	alarm[0] = 1;
+	exit;
+}
+
 //PREVENT SPAWN AFTER WIN
 if (SleepMeterFillObj.game_won) exit;
 

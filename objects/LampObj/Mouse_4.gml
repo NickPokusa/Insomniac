@@ -1,3 +1,5 @@
+if (global.paused) exit;
+
 //INPUT HANDLING
 //only allow lamp use when clown is present
 var clown = instance_find(ClownMonsterObj, 0);

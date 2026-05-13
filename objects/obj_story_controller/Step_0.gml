@@ -1,3 +1,15 @@
+//CLICK TO ADVANCE STORY (TO MOVE FASTER THAN AUTO PLAY)
+if (mouse_check_button_pressed(mb_left)) {
+	if (state == "hold") {
+		state = "fade_out";
+	}
+	else if (state == "fade_in") {
+		alpha = 1;
+		state = "hold";
+		hold_timer = hold_time;
+	}
+}
+
 //FADE IN
 //Gradually increase alpha to make current slide appear
 if (state == "fade_in"){

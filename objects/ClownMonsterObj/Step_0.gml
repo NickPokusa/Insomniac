@@ -1,3 +1,5 @@
+if (global.paused) exit;
+
 //FADE IN
 //Gradually make monster visible when it spawns
 if (fading_in) {

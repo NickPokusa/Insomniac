@@ -10,3 +10,6 @@ audio_sound_gain(bgm, 0.1, 0);
 
 //initializes global flag used to track if a monster is active
 global.monster_active=false;
+
+//PAUSE STATE
+global.paused = false;

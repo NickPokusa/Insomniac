@@ -1,3 +1,5 @@
+if (global.paused) exit;
+
 //STOP LOGIC AFTER WIN
 if (SleepMeterFillObj.game_won) exit;
 

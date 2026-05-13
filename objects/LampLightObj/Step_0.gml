@@ -1,3 +1,5 @@
+if (global.paused) exit;
+
 //Ignore input after win
 if (SleepMeterFillObj.game_won) exit;
 

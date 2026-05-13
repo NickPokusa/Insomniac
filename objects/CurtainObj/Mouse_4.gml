@@ -1,3 +1,5 @@
+if (global.paused) exit;
+
 //INPUT HANDLING
 //only allow curtain interaction while shadow monster is present
 var shadow = instance_find(ShadowMonsterObj, 0);

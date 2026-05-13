@@ -1,3 +1,5 @@
+if (global.paused) exit;
+
 //INPUT HANDLING
 //only allow sleeping if the game is not won and no monster is active
 if (!SleepMeterFillObj.game_won && !global.monster_active){

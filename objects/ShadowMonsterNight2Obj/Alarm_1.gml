@@ -1,3 +1,8 @@
+if (global.paused) {
+	alarm[1] = 1;
+	exit;
+}
+
 //FAIL CONDITION
 //triggered if player does not react in time
 

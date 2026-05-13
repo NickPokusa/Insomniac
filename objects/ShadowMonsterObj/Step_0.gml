@@ -1,3 +1,5 @@
+if (global.paused) exit;
+
 // FADE IN
 //gradually make the shadow monster visible when it spawns
 if (fading_in) {

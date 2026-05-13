@@ -1,3 +1,5 @@
+if (global.paused) exit;
+
 //INPUT HANDLING
 //only allow flashlight use when the mirror monster is present
 var mirror = instance_find(MirrorMonsterObj, 0);

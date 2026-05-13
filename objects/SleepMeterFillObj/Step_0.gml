@@ -1,3 +1,5 @@
+if (global.paused) exit;
+
 //SLEEP PROGRESSION
 //meter only fills while sleeping, before win, and when no monster is active
 if (is_sleeping && !game_won && !global.monster_active){
@@ -77,7 +79,25 @@ if(sleep_meter >= sleep_meter_max && !game_won){
 		curtain.sprite_index = CurtainClosed;
 	}
 
+//Determine Next Night
+if (room == rm_night1) {
+
 	global.next_room = rm_night2;
-	start_transition(rm_win);
+
+}
+
+else if (room == rm_night2) {
+
+	global.next_room = rm_night3;
+
+}
+
+else if (room == rm_night3) {
+
+	global.next_room = rm_start;
+
+}
+//Transition to win screen
+start_transition(rm_win);
 }
 

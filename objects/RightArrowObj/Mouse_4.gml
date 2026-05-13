@@ -1,3 +1,5 @@
+if (global.paused) exit;
+
 //CLICK FEEDBACK
 var s = audio_play_sound(snd_click, 1, false);
 //voume control
