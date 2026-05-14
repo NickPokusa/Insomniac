@@ -1,3 +1,6 @@
+//Go to highest level saved
+Load_Game();
+
 //INITIALIZE GAME STATE
 //reset win condition at the start of the game
 SleepMeterFillObj.game_won = false;

@@ -4,3 +4,7 @@ if (!audio_is_playing(snd_storm)) {
 	menu_story_bgm = audio_play_sound(snd_storm, 1, true);
 	audio_sound_gain(menu_story_bgm, 0.15, 0);
 }
+global.highest_night = 1;
+
+//load saved game
+Load_Game();

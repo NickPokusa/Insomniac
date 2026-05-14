@@ -86,7 +86,10 @@
     {"id":{"name":"rm_night3","path":"rooms/rm_night3/rm_night3.yy",},},
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"id":{"name":"rm_story","path":"rooms/rm_story/rm_story.yy",},},
+    {"id":{"name":"rm_win_final_level","path":"rooms/rm_win_final_level/rm_win_final_level.yy",},},
     {"id":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
+    {"id":{"name":"Load_Game","path":"scripts/Load_Game/Load_Game.yy",},},
+    {"id":{"name":"Save_Game","path":"scripts/Save_Game/Save_Game.yy",},},
     {"id":{"name":"start_transition","path":"scripts/start_transition/start_transition.yy",},},
     {"id":{"name":"ES_House_of_Horror___Experia","path":"sounds/ES_House_of_Horror___Experia/ES_House_of_Horror___Experia.yy",},},
     {"id":{"name":"snd_click","path":"sounds/snd_click/snd_click.yy",},},
@@ -166,6 +169,7 @@
     {"roomId":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
     {"roomId":{"name":"rm_night2","path":"rooms/rm_night2/rm_night2.yy",},},
     {"roomId":{"name":"rm_night3","path":"rooms/rm_night3/rm_night3.yy",},},
+    {"roomId":{"name":"rm_win_final_level","path":"rooms/rm_win_final_level/rm_win_final_level.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

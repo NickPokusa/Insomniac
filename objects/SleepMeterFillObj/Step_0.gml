@@ -79,25 +79,39 @@ if(sleep_meter >= sleep_meter_max && !game_won){
 		curtain.sprite_index = CurtainClosed;
 	}
 
-//Determine Next Night
-if (room == rm_night1) {
 
+
+//Determine Next Night & Save Progress
+if (room == rm_night1){
+	//unlock night 2 after completing night 1
+	global.highest_night = max(global.highest_night, 2);
+	Save_Game();
+	
 	global.next_room = rm_night2;
+	
+	//Transition to normal win screen
+	start_transition(rm_win);
 
 }
-
-else if (room == rm_night2) {
-
+else if (room == rm_night2){
+	global.highest_night = max(global.highest_night, 3);
+	Save_Game();
+	
 	global.next_room = rm_night3;
-
-}
-
-else if (room == rm_night3) {
-
+	
+	//Transition to normal win screen
+	start_transition(rm_win);
+	
+} 
+else if (room == rm_night3){
+	//final night completed, reset progress back to night 1
+	global.highest_night = 1;
+	Save_Game();
+	
 	global.next_room = rm_start;
+	
+	//Transition to final win screen
+	start_transition(rm_win_final_level);
+}
 
 }
-//Transition to win screen
-start_transition(rm_win);
-}
-
