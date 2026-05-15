@@ -21,8 +21,29 @@ if (fading_out) {
 		//RESET MONSTER STATE
 		//fully hide and reset monster state
 		visible = false;
-		global.monster_active = false;
 		hit_by_light = false;
+		
+		//Recalculate monster activity
+		//Only allow sleeping again if no monsters are still visible
+		global.monster_active = false;
+		
+		with (MirrorMonsterNight3Obj){
+			if (visible){
+				global.monster_active = true;
+			}
+		}
+		
+		with (ClownMonsterNight3Obj){
+			if (visible){
+				global.monster_active = true;
+			}
+		}
+		
+		with (ShadowMonsterNight3Obj){
+			if (visible){
+				global.monster_active = true;
+			}
+		}
 		
 		//RESET FLASHLIGHT SYSTEM
 		//turn off light effect  when the monster is defeated

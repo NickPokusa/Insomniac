@@ -20,7 +20,28 @@ if (fading_out) {
 		//fully hide and reset monster state
 		visible = false;
 		hit_by_light = false;
+		
+		//Recalculate monster activity
+		//Only allow sleeping again if no monsters are still visible
 		global.monster_active = false;
+		
+		with (MirrorMonsterNight3Obj){
+			if (visible){
+				global.monster_active = true;
+			}
+		}
+		
+		with (ClownMonsterNight3Obj){
+			if (visible){
+				global.monster_active = true;
+			}
+		}
+		
+		with (ShadowMonsterNight3Obj){
+			if (visible){
+				global.monster_active = true;
+			}
+		}
 		
 		//RESET LAMP STATE
 		//turn off the lamp light after monster is defeated

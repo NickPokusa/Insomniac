@@ -23,7 +23,7 @@ if (fading_out) {
 		visible = false;
 		hit_by_light = false;
 		global.monster_active = false;
-		
+
 		//RESET LAMP STATE
 		//turn off the lamp light after monster is defeated
 		var light = instance_find(LampLightObj, 0);

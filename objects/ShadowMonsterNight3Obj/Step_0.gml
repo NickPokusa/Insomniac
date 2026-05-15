@@ -21,7 +21,28 @@ if (fading_out) {
 		//fully hide and reset monster state
 		visible = false;
 		hit_by_light = false;
+		
+		//Recalculate monster activity
+		//Only allow sleeping again if no monsters are still visible
 		global.monster_active = false;
+		
+		with (MirrorMonsterNight3Obj){
+			if (visible){
+				global.monster_active = true;
+			}
+		}
+		
+		with (ClownMonsterNight3Obj){
+			if (visible){
+				global.monster_active = true;
+			}
+		}
+		
+		with (ShadowMonsterNight3Obj){
+			if (visible){
+				global.monster_active = true;
+			}
+		}
 
 		//RESET CURTAIN STATE
 		var light = instance_find(CurtainLightNight3Obj, 0);
